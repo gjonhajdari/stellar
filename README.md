@@ -4,9 +4,10 @@ Web app for managing employees and roles within a company. Built with React, Typ
 
 ## Getting started
 
-Installing dependencies
+Setting up project and installing dependencies
 
 ```bash
+git clone https://github.com/gjonhajdari/stellar.git
 npm install
 ```
 
