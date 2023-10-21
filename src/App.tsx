@@ -1,7 +1,29 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
+import AppLayout from "./components/ui/AppLayout";
+import Dashboard from "./pages/Dashboard";
+import Employees from "./pages/Employees";
+import Roles from "./pages/Roles";
+import Settings from "./pages/Settings";
+import Login from "./pages/Login";
+import PageNotFound from "./pages/PageNotFound";
+
 function App() {
   return (
     <>
-      <h1>App</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<Navigate replace to="dashboard" />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="employees" element={<Employees />} />
+            <Route path="roles" element={<Roles />} />
+            <Route path="settings" element={<Settings />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
