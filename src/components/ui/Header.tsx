@@ -1,5 +1,5 @@
 function Header() {
-  return <div>Header</div>;
+  return <div className="px-10 py-4">Header</div>;
 }
 
 export default Header;

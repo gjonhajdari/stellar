@@ -5,11 +5,11 @@ import Sidebar from "./Sidebar";
 
 function AppLayout() {
   return (
-    <div>
+    <div className="flex divide-x-2 divide-slate-100">
       <Sidebar />
-      <Header />
 
-      <div>
+      <div className="flex w-full flex-col divide-y-2 divide-slate-100">
+        <Header />
         <Outlet />
       </div>
     </div>
