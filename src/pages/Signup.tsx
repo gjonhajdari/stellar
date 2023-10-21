@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,11 +10,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
 import { MoveRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { FullscreenPage } from "@/components/ui/FullscreenPage";
 
 function Signup() {
   return (
-    <div className="flex h-screen items-center justify-center">
+    <FullscreenPage>
       <Card className="w-[400px]">
         <CardHeader>
           <CardTitle className="text-3xl">Create an account</CardTitle>
@@ -47,7 +48,7 @@ function Signup() {
           </Button>
         </CardContent>
       </Card>
-    </div>
+    </FullscreenPage>
   );
 }
 
