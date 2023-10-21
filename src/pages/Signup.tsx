@@ -11,21 +11,26 @@ import { Label } from "@radix-ui/react-label";
 import { MoveRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function Login() {
+function Signup() {
   return (
     <div className="flex h-screen items-center justify-center">
       <Card className="w-[400px]">
         <CardHeader>
-          <CardTitle className="text-3xl">Welcome back</CardTitle>
+          <CardTitle className="text-3xl">Create an account</CardTitle>
           <CardDescription className="text-md">
-            Don't have an account?{" "}
+            Have an account already?{" "}
             <Button asChild variant={"link"} className="text-md px-0">
-              <Link to="/signup">Create one</Link>
+              <Link to="/login">Log in</Link>
             </Button>
           </CardDescription>
         </CardHeader>
+
         <CardContent>
           <div className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="name">Name</Label>
+              <Input type="text" placeholder="Full name" id="name" />
+            </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input type="email" placeholder="Email address" id="email" />
@@ -37,7 +42,7 @@ function Login() {
           </div>
 
           <Button size={"lg"} className="mt-6 w-full">
-            <span className="mr-3">Log in</span>
+            <span className="mr-3">Create account</span>
             <MoveRight />
           </Button>
         </CardContent>
@@ -46,4 +51,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
