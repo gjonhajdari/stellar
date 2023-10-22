@@ -4,6 +4,7 @@ import AppLayout from "./components/ui/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import Employees from "./pages/Employees";
 import Roles from "./pages/Roles";
+import Payroll from "./pages/Payroll";
 import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -19,6 +20,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/employees" element={<Employees />} />
             <Route path="/roles" element={<Roles />} />
+            <Route path="/payroll" element={<Payroll />} />
             <Route path="/settings" element={<Settings />} />
           </Route>
           <Route path="/login" element={<Login />} />
