@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Briefcase,
   LayoutDashboard,
@@ -6,11 +7,18 @@ import {
   Settings,
   Users,
 } from "lucide-react";
+
+import { Button } from "../ui/button";
 import Logo from "../ui/Logo";
 import SidebarLink from "./SidebarLink";
-import { Button } from "../ui/button";
 
 function Sidebar() {
+  const navigate = useNavigate();
+
+  function handleLogout(): void {
+    navigate("/login");
+  }
+
   return (
     <aside className="z-40 flex h-screen flex-col px-6 py-6 sm:w-72">
       <Logo width={120} className="mx-auto mb-16 mt-10" />
@@ -43,7 +51,11 @@ function Sidebar() {
           </SidebarLink>
         </div>
 
-        <Button variant={"ghost"} className="flex items-center justify-start gap-3">
+        <Button
+          variant={"ghost"}
+          className="flex items-center justify-start gap-3"
+          onClick={handleLogout}
+        >
           <LogOut strokeWidth={1.7} />
           <span>Log out</span>
         </Button>

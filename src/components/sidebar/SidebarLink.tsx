@@ -11,7 +11,11 @@ const StyledNavLink = tw(NavLink)`
 	py-3
 	rounded-full
 	font-light
-	text-slate-500
+	[&.active]:bg-pink-800
+	[&.active]:text-slate-100
+	[&.active]:font-semibold
+	hover:bg-slate-100
+	transition-colors
 `;
 
 function SidebarLink({ to, children }: { to: string; children: ReactNode }) {
