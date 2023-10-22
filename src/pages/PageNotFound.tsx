@@ -9,9 +9,9 @@ function PageNotFound() {
   return (
     <FullscreenPage>
       <div>
-        <h1 className="text-5xl font-semibold text-slate-800">404 - Not Found</h1>
-        <p className="mb-12 mt-5 text-slate-500">
-          Sorry the page you're looking for does not exist.
+        <h1 className="font-semibold text-slate-800 md:text-6xl">404 - Not Found</h1>
+        <p className="mb-14 mt-5 text-center text-slate-500 md:text-xl">
+          Sorry the page you're looking for does not exist :(
         </p>
         <Button
           variant={"outline"}
