@@ -1,6 +1,8 @@
 # Stellar
 
-Web app for managing employees and roles within a company. Built with React + TypeScript. Some UI elements implement [shadcn-ui](https://ui.shadcn.com/).
+Web App for managing employees and roles within a company. Built with React, Vite and TypeScript. Some UI elements implement [shadcn-ui](https://ui.shadcn.com/) components.
+
+The UI/UX design of the website itself was mostly taken from [Aerten Web App](https://www.figma.com/community/file/1252610051102275471/aerten-web-app) by Tassy Omah with a few modifications and aditions.
 
 ## Getting started
 
