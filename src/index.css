@@ -74,7 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-.active {
-  @apply bg-pink-800 font-semibold text-slate-200;
-}
