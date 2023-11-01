@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileDown, HelpCircle, PlusCircle } from "lucide-react";
 
@@ -8,9 +9,10 @@ function Employees() {
         <div className="flex items-center gap-2">
           <h1 className="text-3xl">Employees</h1>
           <HelpCircle size={20} className="text-slate-400" />
-          <span className="rounded-full bg-pink-800/5 px-2 py-1 text-sm text-pink-800">
+          <Badge>100</Badge>
+          {/* <span className="rounded-full bg-pink-800/5 px-2 py-1 text-sm text-pink-800">
             100
-          </span>
+          </span> */}
         </div>
 
         <div className="space-x-3">
